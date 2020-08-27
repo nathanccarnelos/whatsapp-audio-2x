@@ -1,0 +1,23 @@
+.twoTimesButton{
+    color: #b1b3b5;
+    mso-font-width: 100%;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.twoTimesButton:active:hover {
+    background-color: rgba(0,0,0, .1);
+}
+
+.twoTimesButtonActive {
+    color: #ffffff;
+    background-color: #06d755;
+}
+
+.twoTimesButtonActive:hover {
+    background-color: #05aa40;
+}
