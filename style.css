@@ -1,7 +1,7 @@
 .twoTimesButton{
-    color: #b1b3b5;
-    mso-font-width: 100%;
+    color: #919191;
     font-weight: bold;
+    font-size: 15px;
     background-color: transparent;
     border: none;
     margin-left: 10px;
@@ -13,11 +13,11 @@
     background-color: rgba(0,0,0, .1);
 }
 
-.twoTimesButtonActive {
+.twoTimesButton.active {
     color: #ffffff;
     background-color: #06d755;
 }
 
-.twoTimesButtonActive:hover {
+.twoTimesButton.active:hover {
     background-color: #05aa40;
 }
