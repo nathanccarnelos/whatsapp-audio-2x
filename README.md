@@ -25,5 +25,6 @@ If the speed it is above 1x it will show up like this
 ## developers
 
 [Nathan](https://github.com/nathanccarnelos)
+
 [Junior](https://github.com/ednailson)
 
