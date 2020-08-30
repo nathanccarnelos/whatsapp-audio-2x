@@ -9,11 +9,7 @@ if(!storageSpeed.get()) {
     storageSpeed.set(1)
 };
 
-const interval = setInterval(() => {
-    const header = document.querySelector(wppHeaderClass);
-    if (!header) return;
-
-    clearInterval(interval);
+  function main (header) {
     let speed = storageSpeed.get();
     const button = createButton(speed)
     header.appendChild(button);
@@ -38,7 +34,7 @@ const interval = setInterval(() => {
             audio.playbackRate = speed;
         })
     })
-}, 1000)
+}
 
 function speedText(speed) {
     return `${speed}x`;
@@ -52,3 +48,18 @@ function createButton (speed) {
     button.changeText(speed);
     return button;
 }
+
+const waitHeaderRender = () => {
+    return new Promise((resolve) => {
+      const interval = setInterval(() => {
+          console.count('tryGetHeader')
+        const header = document.querySelector(wppHeaderClass);
+        if (!!header) {
+            clearInterval(interval)
+            return resolve(header)
+        };
+      }, 1000);
+    });
+  };
+
+  waitHeaderRender().then(main);
