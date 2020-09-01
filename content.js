@@ -29,6 +29,10 @@ if(!storageSpeed.get()) {
     })
 
     document.addEventListener("click", () => {
+        const videos = document.querySelectorAll("video");
+        videos.forEach((video) => {
+            video.playbackRate = speed;
+        })
         const audios = document.querySelectorAll("audio");
         audios.forEach((audio) => {
             audio.playbackRate = speed;
