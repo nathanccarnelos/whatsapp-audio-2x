@@ -1,4 +1,4 @@
-const wppHeaderClass = "._1QUKR" ;
+const wppHeaderClass = "._1R3Un" ;
 
 const storageSpeed = {
     get: () => Number(localStorage.getItem('wpp-speed')),
